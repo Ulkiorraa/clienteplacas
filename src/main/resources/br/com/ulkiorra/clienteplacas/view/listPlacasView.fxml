@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="691.0" prefWidth="1263.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.ulkiorra.clienteplacas.controller.ListPlacasController">
+   <Label text="Placas">
+      <font>
+         <Font name="System Bold" size="28.0" />
+      </font>
+   </Label>
+    <ToolBar prefHeight="40.0" prefWidth="200.0">
+        <Button mnemonicParsing="false" onAction="#onActionNew" prefHeight="19.0" prefWidth="52.0" text="New" />
+    </ToolBar>
+    <TableView fx:id="table_placas" prefHeight="340.0" prefWidth="1026.0">
+        <columns>
+            <TableColumn fx:id="table_placa" prefWidth="81.59999996423721" text="Placa" />
+            <TableColumn fx:id="table_cliente" prefWidth="96.0" text="Cliente" />
+            <TableColumn fx:id="table_fone" prefWidth="101.60000610351562" text="Telefone" />
+            <TableColumn fx:id="table_status" prefWidth="105.5999755859375" text="Status" />
+            <TableColumn fx:id="table_vendedor" prefWidth="106.39996337890625" text="Vendedor" />
+            <TableColumn fx:id="table_observacao" prefWidth="115.199951171875" text="Observação" />
+            <TableColumn fx:id="table_dtestamp" prefWidth="145.5999755859375" text="Data de Estampagem" />
+            <TableColumn fx:id="table_dtfin" prefWidth="125.5999755859375" text="Data de Finalização" />
+            <TableColumn fx:id="table_preco" prefWidth="125.5999755859375" text="Preço" />
+        </columns>
+    </TableView>
+    <AnchorPane fx:id="ancorpaine" prefHeight="317.0" prefWidth="1025.0">
+        <ImageView fx:id="imageview" fitHeight="106.0" fitWidth="316.0" layoutX="907.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../drawable/placa_normal.png" />
+        </ImageView>
+        <Label fx:id="txtlabelplaca" layoutX="932.0" layoutY="111.0" prefHeight="94.0" prefWidth="298.0" text="BRA0A00">
+            <font>
+                <Font name="System Bold" size="65.0" />
+            </font>
+        </Label>
+      <Label layoutX="29.0" layoutY="31.0" text="Nome:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelnome" layoutX="77.0" layoutY="31.0" prefHeight="19.0" prefWidth="399.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="61.0" text="Telefone:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelfone" layoutX="94.0" layoutY="61.0" prefHeight="19.0" prefWidth="190.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="505.0" layoutY="31.0" text="Status da placa:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelstatus" layoutX="607.0" layoutY="31.0" prefHeight="19.0" prefWidth="183.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="505.0" layoutY="61.0" text="Vendedor:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelvend" layoutX="573.0" layoutY="61.0" prefHeight="19.0" prefWidth="196.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="95.0" text="Data Fabricação:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="labeldtf" layoutX="137.0" layoutY="95.0" prefHeight="19.0" prefWidth="170.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="505.0" layoutY="95.0" text="Data Finalização:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="labeldtfn" layoutX="615.0" layoutY="95.0" prefHeight="19.0" prefWidth="190.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="503.0" layoutY="137.0" text="Preço:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelprc" layoutX="561.0" layoutY="137.0" prefHeight="19.0" prefWidth="220.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="545.0" layoutY="137.0" text="R$">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="137.0" text="Observação:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelobs" alignment="TOP_LEFT" layoutX="111.0" layoutY="137.0" prefHeight="136.0" prefWidth="373.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+    </AnchorPane>
+</VBox>
