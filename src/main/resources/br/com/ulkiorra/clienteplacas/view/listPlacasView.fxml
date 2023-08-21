@@ -37,9 +37,9 @@
         <ImageView fx:id="imageview" fitHeight="106.0" fitWidth="316.0" layoutX="907.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
             <Image url="@../drawable/placa_normal.png" />
         </ImageView>
-        <Label fx:id="txtlabelplaca" layoutX="932.0" layoutY="111.0" prefHeight="94.0" prefWidth="298.0" text="BRA0A00">
+        <Label fx:id="txtlabelplaca" layoutX="929.0" layoutY="109.0" prefHeight="94.0" prefWidth="294.0" text="BRA0A00">
             <font>
-                <Font name="System Bold" size="65.0" />
+                <Font name="System Bold" size="60.0" />
             </font>
         </Label>
       <Label layoutX="29.0" layoutY="31.0" text="Nome:">

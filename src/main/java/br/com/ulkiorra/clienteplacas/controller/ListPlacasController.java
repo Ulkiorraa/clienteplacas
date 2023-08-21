@@ -128,7 +128,11 @@ public class ListPlacasController implements Initializable, DataChangedListner {
                 txtlabelplaca.setText(newValue.getPlaca());
                 labelnome.setText(newValue.getClient_name());
                 labelfone.setText(newValue.getClient_fone());
-                labeldtf.setText(newValue.getDataestampagem().toString());
+                if(newValue.getDataestampagem() != null){
+                    labeldtf.setText(newValue.getDataestampagem().toString());
+                }else {
+                    labeldtf.setText("");
+                }
                 if(newValue.getDatafinalizacao() != null){
                     labeldtfn.setText(newValue.getDatafinalizacao().toString());
                 }else {
